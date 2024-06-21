@@ -3,6 +3,8 @@
 
 #include "layer/linear.h"
 
+namespace py = pybind11;
+
 PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
-    m.def("linear_forward_cuda", &linear_forward_cuda, "Linear forward (CUDA)");
+    m.def("linear_forward_cuda", &my_linear_forward_cuda, "Linear forward (CUDA)");
 }
