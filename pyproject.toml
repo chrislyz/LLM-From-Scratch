@@ -8,5 +8,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "llmfs"
 version = "0.0.1"
+description = ""
+authors = ["Chris Zhang <chrisly.zhang@outlook.com>"]
 readme = "README.md"
 requires-python = ">=3.8"

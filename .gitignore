@@ -1,4 +1,9 @@
+# ignore editor related
 .vscode/
-
 build/
 *.egg-info/
+
+llmfs/__pycache__/
+llmfs/module/__pycache__/
+llmfs/model/__pycache__/
+llmfs/ref/

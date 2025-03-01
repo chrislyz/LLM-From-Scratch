@@ -1,6 +1,5 @@
 from typing import List
-from ..model.llama import LLAMA1
-from ..module.token import *
+from llmfs.model.llama import LLAMA1
 
 import numpy as np
 
