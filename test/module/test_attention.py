@@ -208,9 +208,9 @@ if __name__ == '__main__':
 
     def test_mha():
         mha = attention.MultiHeadAttention(embed_dim, 2)
-        res = mha(embedding(seq))
+        res = mha(embedding(seq), embedding(seq), embedding(seq))
         print(res[0])
-    # test_mha()
+    test_mha()
 
     def test_torch_mha():
         torch_mha = nn.MultiheadAttention(embed_dim, 2, batch_first=True)
@@ -229,7 +229,7 @@ if __name__ == '__main__':
     rope_res = rope(embedding(seq))
     print(rope_res[0])
 
-    rope_vit = RoPEAttention(embed_dim, 2)
-    freqs_cis = compute_axial_cis()
-    rope_vit_res = rope_vit(embedding(seq), freqs_cis)
-    print(rope_vit_res[0])
+    # rope_vit = RoPEAttention(embed_dim, 2)
+    # freqs_cis = compute_axial_cis()
+    # rope_vit_res = rope_vit(embedding(seq), freqs_cis)
+    # print(rope_vit_res[0])
